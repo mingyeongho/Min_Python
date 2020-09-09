@@ -1,6 +1,6 @@
 counter = 0
 ptr = 0 #이미 찾은 소수 개수
-prime = [None] * 500
+prime = [None] * 500 #소수 배열
 
 prime[ptr] = 2 #2는 소수이므로 초깃값으로 저장
 ptr += 1
