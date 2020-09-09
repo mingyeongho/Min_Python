@@ -29,3 +29,4 @@ if __name__ == '__main__' :
         retry = input('한 번 더 변환할까요?(Y/N) ')
         if retry in {'N','n'} :
             break
+        
