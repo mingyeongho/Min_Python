@@ -1,4 +1,4 @@
-x = ['John', 'George', 'Paul', 'Ringo']
+numbers = [1,2,3,4,5]
 
-for i, name in enumerate(x, 1) :
-    print(f'x[{i}] = {name}')
+result = [n for n in numbers if n % 2 == 1]
+print(result)
