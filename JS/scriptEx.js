@@ -1,5 +1,17 @@
-var walkAmount = prompt('walk', '0');
+var id = "easy1004";
+var pw = "112233";
 
-if (walkAmount >= 10000) {
-    document.write('Good');
+var user_id = prompt('user_id: ', '');
+var user_pw = prompt('user_pw: ', '');
+
+if (id == user_id) {
+    if (pw == user_pw) {
+        document.write(user_id + '님 반갑습니다.');
+    } else {
+        alert('비밀번호가 일치하지 않습니다.');
+        location.reload();
+    }
+} else {
+    alert('아이디가 일치하지 않습니다.');
+    location.reload();
 }
