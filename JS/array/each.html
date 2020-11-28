@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        div {
+            color:red;
+            font-weight: bolder;
+        }
+    </style>
+    <script src='../script/jquery-3.5.1.js'></script>
+    <script>
+        $(function() {
+            // $(document).click(function() {
+            //     $('div').each(function() {
+            //         if (this.style.color != 'blue') {
+            //             this.style.color = 'blue';
+            //         } else {
+            //             this.style.color = 'red';
+            //         }
+            //     })
+            // });
+            $('div').click(function() {
+                if (this.style.color != 'blue') {
+                    this.style.color = 'blue';
+                } else {
+                    this.style.color = 'red';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>Korea</div>
+    <div>USA</div>
+    <div>Japan</div>
+</body>
+</html>

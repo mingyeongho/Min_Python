@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        div#box {
+            width: 100px;
+            height: 100px;
+            background-color: #FC9;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div><p></p>
+    <div id="txt"></div><p></p>
+
+    <button id="btn1" onclick="remove_click()">클릭 이벤트 제거</button>&nbsp;
+    <script>
+        function alt1() {
+            document.getElementById('txt').innerHTML = "마우스를 올렸습니다.";
+            return true;
+        } 
+        function alt2() {
+            document.getElementById('txt').innerHTML = "마우스를 내렸습니다.";
+            return true;
+        } 
+        function alt3() {
+            document.getElementById('txt').innerHTML = "마우스를 클릭했습니다.";
+            return true;
+        } 
+        function remove_click() {
+            document.getElementById('box').removeEventListener('click', alt3);
+            return true;
+        }
+ 
+        area = document.getElementById('box');
+ 
+        area.addEventListener("mouseover", alt1);
+        area.addEventListener("mouseout", alt2);
+        area.addEventListener("click", alt3);
+     </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        img {
+            padding: 0px;
+            margin: 5px;
+        }
+    </style>
+    <script src="../script/jquery-3.5.1.js"></script>
+    <script>
+        $(function() {
+            $('button#append').click(function() {
+                $('div#container').append($('div#container img first'));
+            });
+            $('button#prepend').click(function() {
+                $('div#container').append($('div#container img last'));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id='container'>
+        <img src="C:\Users\min gyeong ho\Desktop\자바스크립트\images\sample1.jpg" alt="" width='100' height='100'/>
+        <img src="C:\Users\min gyeong ho\Desktop\자바스크립트\images\sample2.jpg" alt="" width='100' height='100'/>
+        <img src="C:\Users\min gyeong ho\Desktop\자바스크립트\images\sample3.jpg" alt="" width='100' height='100'/>
+    </div>
+    <button id='append' title='append'>append</button>
+    <button id='prepend' title='prepend'>prepend</button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        div{
+            background-color: yellow;
+            margin: 4px;
+            border: 1px solid red;
+            width: 100px;
+            height: 120px;
+        }
+    </style>
+    <script src='../script/jquery-3.5.1.js'></script>
+    <script>
+        $(function(){
+            var str;
+
+            $('button#btn').click(function() {
+                if(!str){
+                    str=$('div.prov2').detach();
+                } else {
+                    str.insertAfter('div.prov1');
+                    str=null;
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class='prov1'>
+        충청북도
+        <p>청주시</p>
+        <p>충주시</p>
+    </div>
+
+    <div class='prov2'>
+        충청남도
+        <p>대전시</p>
+        <p>천안시</p>
+    </div>
+
+    <button id='btn'>div 제거/삽입</button>
+</body>
+</html>

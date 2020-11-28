@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+
+        function time_start() {
+            today = new Date();
+            now = today.getHours() + "시" + today.getMinutes() + "분" + today.getSeconds() + "초";
+            document.myform.timebar.value = now;
+        }
+        function start() {
+            time_id = setInterval("time_start()", 1000);
+        }
+        function stop() {
+            clearInterval(time_id);
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="myform">
+        <input type="text" size=20 name="timebar"><br>
+        <input type="button" value="시간 시작" onclick="start()">&nbsp;&nbsp;
+        <input type="button" value="시간 종료" onclick="stop()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        div{
+            display: none;
+            margin: 3px;
+            width: 80px;
+            height: 80px;
+            float: left;
+            border-radius: 10px;
+        }
+        div#one {
+            background: red;
+        }
+        div#two {
+            background: green;
+        }
+        div#three {
+            background: blue;
+        }
+    </style>
+    <script src="../script/jquery-3.5.1.js"></script>
+    <script>
+        $(function() {
+            $('button').click(function() {
+                $('div:hidden:first').fadeIn(2000);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id='one'></div>
+    <div id='two'></div>
+    <div id='three'></div>
+    <br clear='left'>
+    <button>Click here!</button>
+</body>
+</html>

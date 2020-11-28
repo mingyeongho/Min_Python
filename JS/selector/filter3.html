@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <script src="../script/jquery-3.5.1.js"></script>
+    <script>
+        $(function() {
+            $('h3').not('.select').css('color','red');
+            $('h3').each(function() {
+                if ($(this).is('.select')) {
+                    $(this).css('background','orange');
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+    <h3 class="select">Header-0</h3>
+    <h3>Header-1</h3>
+    <h3>Header-2</h3>
+    <h3>Header-3</h3>
+    <h3 class="select">Header-4</h3>
+    <h3>Header-5</h3>
+    <h3>Header-6</h3>
+</body>
+</html>

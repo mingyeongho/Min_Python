@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <script src='../script/jquery-3.5.1.js'></script>
+    <script>
+        $(function() {
+            $('#prev1').nextUntil('#prev2').css('background-color','yellow');
+            $('#prev1').nextUntil('#prev2', '#stop').css('color', 'red');
+        });
+    </script>
+</head>
+<body>
+    <dt>
+        <dt id="prev1">충청북도</dt>
+        <dd>청주시</dd>
+        <dd id='stop'>충주시</dd>
+        <dd>제천시</dd>
+        <dt id="prev2">충청남도</dt>
+        <dd>대전시</dd>
+        <dd>천안시</dd>
+    </dt>
+</body>
+</html>

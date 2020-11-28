@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function info(form) {
+            if(form.nation.selectedIndex == 0) {
+                alert('국가를 선택하세요.');
+                return;
+            }
+            var select_len = form.nation.length;
+
+            for (var i = 0; i < select_len; i++) {
+                if (form.nation[i].selected) {
+                    var str = i+1 + "번째 항목이 선택되었습니다.\n";
+                    str += " 선택된 항목의 형태: " + form.nation.type + "\n";
+                    str += " 선택된 항목의 번호: " + form.nation[i].index + "\n";
+                    str += " 선택된 항목의 이름: " + form.nation.name + "\n";
+                    str += " 선택된 항목의 값: " + form.nation[i].value + "\n";
+                    str += " 선택된 항목의 텍스트: " + form.nation[i].text + "\n";
+                    alert(str);
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="myform">
+        <select name="nation" id="" size=1>
+            <option value="x">여행지 선택</option>
+            <option value="A">America</option>
+            <option value="E">England</option>
+            <option value="G">Germany</option>
+            <option value="I">Italy</option>
+        </select>
+        <input type="button" value="확인" onclick="info(this.form)">
+    </form>
+</body>
+</html>

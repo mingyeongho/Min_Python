@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <script src="../script/jquery-3.5.1.js"></script>
+    <script>
+        $(function() {
+            $('#inner_1 p:contains("Contents1")').css('background-color', 'yellow');
+            $('#inner_1 p:has(strong)').css('background-color', 'aqua');
+        });
+    </script>
+</head>
+<body>
+    <h3>콘첸츠 탐색 선택자</h3>
+    <section id='inner_1'>
+        <h1>contains(), has()</h1>
+        <p><span>Contents1</span></p>
+        <p><strong>Contents2</strong></p>
+        <p><span>Contents3</span></p>
+    </section>
+</body>
+</html>

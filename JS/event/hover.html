@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        .myClass{
+            background:red;
+            color: white;
+        }
+    </style>
+    <script src="../script/jquery-3.5.1.js"></script>
+    <script>
+        $(function() {
+            $('ul li').hover(function() {
+                $(this).addClass('myClass');
+            }, function() {
+                $(this).removeClass('myClass');
+            });
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Korea</li>
+        <li>Japan</li>
+        <li>China</li>
+    </ul>
+</body>
+</html>

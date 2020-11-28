@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset='utf-8'>
+     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <title>Page Title</title>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <script>
+         var URI = 'http://www.ut.ac.kr?name=심청';
+
+         var output1 = encodeURI(URI);
+         document.write('encodeURI(): ', output1, "<br>");
+         document.write('decodeURI(): ', decodeURI(output1), '<br><br>');
+
+         var output2 = encodeURIComponent(URI);
+         document.write('encodeURIComponent(): ', output2, '<br>');
+         document.write('decodeURIComponent(): ', decodeURIComponent(output2), '<br><br>');
+     </script>
+ </head>
+ <body>
+     
+ </body>
+ </html>

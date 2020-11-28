@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <script>
+        function open_win2() {
+            var yourName = eval("document.child.child_data.value");
+            opener.document.parent.parent_data.value = yourName;
+            self.close();
+        }
+    </script>
+</head>
+<body>
+    <form name="child">
+        <input type="text" name="child_data" size=20>
+        <input type="button" value="input" onclick="open_win2()">
+    </form>
+</body>
+</html>

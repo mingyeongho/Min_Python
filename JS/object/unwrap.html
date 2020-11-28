@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 200px;
+        }
+        p{
+            margin: 5px;
+        }
+    </style>
+    <script src='../script/jquery-3.5.1.js'></script>
+    <script>
+        $(function(){
+            var pTags = $('p');
+            $('button#btn').one('click', function() {
+                if (pTags.parent().is('div')){
+                    pTags.unwrap();
+                } else {
+                    pTags.wrap('<div>');
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Operating Systems</p>
+    <p>Internet Programming</p>
+    <p>Java Programming</p>
+    <button id='btn'>wrap test</button>
+</body>
+</html>

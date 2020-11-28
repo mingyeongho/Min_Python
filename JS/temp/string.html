@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        var str1 = new String("Java Script1");
+        
+        document.write("st1.match('v'): " + str1.match("v"), "<br>");
+        document.write("st1.match('b'): " + str1.match("b"), "<br><br>");
+
+        document.write("str1.search('v'): " + str1.search("v"), "<br>");
+        document.write("str1.search('b'): " + str1.search("b"), "<br><br>");
+
+        document.write("str1.replace('1','2'): " + str1.replace("1","2"), "<br>");
+        document.write("str1.replace('b','v'): " + str1.replace("b","v"), "<br><br>");
+
+        document.write("str1.substring(0,4) : " + str1.substring(0,4), "<br>");
+        document.write("str1.slice(0,3) : " + str1.slice(0,4), "<br>");
+        document.write("str1.substr(5,6) : " + str1.substr(5,6), "<br><br>");
+
+        document.write("String객체의 문자 크기와 모양 관련 메소드<br>");
+        document.write(str1.big() + "<br>");
+        document.write(str1.small() + "<br>");
+        document.write(str1.fontsize(7) + "<br>");
+        document.write(str1.fixed() + "<br>");
+        document.write(str1.bold() + "<br>");
+        document.write(str1.italics() + "<br>");
+        document.write(str1.strike() + "<br>");
+        document.write(str1.anchor() + "<br>");
+        document.write(str1.link("https://www.naver.com") + "<br><br>");
+
+        document.write("String객체의 기타 문자열 관련 메소드<br>");
+        document.write("str1.split(' ') : " + str1.split(' ') + "<br>");
+        document.write("str1.toUpperCase() : " + str1.toUpperCase() + "<br>");
+        document.write("str1.toLowerCase() : " + str1.toLowerCase() + "<br>");
+        document.write("str1.charCodeAt(6) : " + str1.charCodeAt(6) + "<br>");
+        document.write("String.fromCharCode(99) : " + String.fromCharCode(99) + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        var rightId = 'min';
+        var rightPw = '1234';
+        function login(id,pw) {
+            if (id == rightId) {
+                if (pw == rightPw) {
+                    alert('Login success');
+                } else {
+                    alert('re pw');
+                }
+            } else {
+                alert('re Id');
+            }
+        }
+
+        var userId = prompt('userId: ');
+        var userPw = prompt('userPw: ');
+        login(userId,userPw);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
